@@ -37,4 +37,3 @@ I have not yet decided whether this will be Open Source, commercial or dual-lice
 ### TestCentric Test Engine
 
 I'll be evaluating whether the NUnit engine can be used to carry out all the goals of the other projects. If necessary, a separate engine will be created.
-
