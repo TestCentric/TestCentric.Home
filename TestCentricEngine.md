@@ -1,6 +1,6 @@
 # Creating a Test Engine for TestCentric
 
-This document describes the origin of the NUnit TestEngine and it's current features and development as compared to the needs of the TestCentric GUI. It lays out the options available in developing a new engine or modifying the NUnit engine to meet those needs and lays out a direction for future development. ~~Charlie Poole
+This document describes the origin of the NUnit TestEngine and its current features and development as compared to the needs of the TestCentric GUI. It lays out the options available in developing a new engine or modifying the NUnit engine to meet those needs and lays out a direction for future development. ~~Charlie Poole
 
 ## Background
 
@@ -12,7 +12,7 @@ Among other features, I called out this one...
 
 Note the question mark. I wasn't sure we could do it or what it would mean. However, this was the first public mention, at least that I can remember, of what was to become the NUnit Test Engine.
 
-In 2008, again at the Mono Summit conference in Madrid, my talk was entitled "Mono and NUnit : One year later." It contained the same, bare bullet point. However, in addition, at a BOF session, I presnted the design for what was to be the "NUnit 3.0 Extended Test Platform."
+In 2008, again at the Mono Summit conference in Madrid, my talk was entitled "Mono and NUnit : One year later." It contained the same, bare bullet point. However, in addition, at a BOF session, I presented the design for what was to be the "NUnit 3.0 Extended Test Platform."
 
 This was a three-layer architecture, consisting of runners, test engine and framework. Here's what it looked like...
 
@@ -21,10 +21,10 @@ This was a three-layer architecture, consisting of runners, test engine and fram
 Many of the individual items in this diagram are no longer relevant today, but the overall design was the basis for NUnit 3.0.
 
 ## Terminology
- n
+
 It's surprising how easily development of an application can be derailed if terms used are not clearly defined and used in the same way by all team members. Here, I'll make some attempt to define the terms I'm using.
 
- *  **Runners:** At the architectural level, a __runner__ is an __application__ that is used by developers to discover and execute tests. The word is overloaded at other levels. For example, the engine contains classes that are called runners because of the function they perform. As programmers and humans, we are wired to handle overloading of terms, so hopefully that shouldn't be a problem. The __TestCentric GUI__ is an example of a __runner__.
+ * **Runners:** At the architectural level, a __runner__ is an __application__ that is used by developers to discover and execute tests. The word is overloaded at other levels. For example, the engine contains classes that are called runners because of the function they perform. As programmers and humans, we are wired to handle overloading of terms, so hopefully that shouldn't be a problem. The __TestCentric GUI__ is an example of a __runner__.
 
  * **Engine:** The term **engine** refers to the common software, described in the first section, that is used by all runners to discover and execute tests. It is essentially a service provided to every runner in order to facilitate common behavior in the running of tests. The term is typically used in two different ways, referring to either the __engine assembly__ itself or the entire __engine layer__ as shown in the architectural diagram. In this document, I'll try to use it consistently to refer to the __engine assembly__ or qualify it if necessary.
 
