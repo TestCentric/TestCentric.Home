@@ -75,8 +75,8 @@ The following is just a sketch of the changes we will need to make to the existi
 
 4. Assemblies will be renamed using a testcentric designation at this point, in order to avoid having assemblies with the same name that don't share the same functionality.
 
-5. The .NET standard build of the engine will be dropped. The other builds will remain the supported version levels will probably increase in the future. The .NET Standard 2.0 build is likely to become a .NET Core build but that decision requires more analysis. Note that the engine assembly will now only need to support platforms in which the runners initially execute rather than all the target platforms under which tests are run.
+5. The .NET standard 1.6 build of the engine will be dropped. The other builds will remain the supported version levels will probably increase in the future. The .NET Standard 2.0 build is likely to become a .NET Core build but that decision requires more analysis. Note that the engine assembly will now only need to support platforms in which the runners initially execute rather than all the target platforms under which tests are run.
 
 6. The agent dll will retain all the same builds that it currently has since it has to be loaded in all platforms and runtimes in which we want to run tests.
 
-7. At this point, we will switch the GUI to use the new engine, hopefully for it's 1.1 release, and continue development from theree.
+7. At this point, we will switch the GUI to use the new engine, hopefully for it's 1.1 release, and continue development from there.
