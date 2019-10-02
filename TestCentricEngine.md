@@ -62,6 +62,8 @@ All of these items are relatively major and some of them may be out out of scope
 
 The question of timing is important. TestCentric GUI 1.0 has been released using the NUnit engine with minor modifications. So, essentially, we already have our own engine. For subsequent releases, I think we are likely to deviate further. That said, if we are able to make some changes in the NUnit engine before splitting off completely, we'll be able to retain a greater degree of compatibility.
 
+One consideration, not mentioned above, is that the TestCentric engine, in it's initial release, will be able to make changes, which would be breaking if made in the NUnit engine itself. This seems very important in terms of being able to move ahead quickly. Of course, once the engine is released - or at least once it is released as a separate package - changing it will require the usual level of care to avoid breaking existing usage.
+
 ## TestCentric Engine
 
 The following is just a sketch of the changes we will need to make to the existing NUnit engine. Details will come, as usual, as we implement it.
@@ -78,4 +80,6 @@ The following is just a sketch of the changes we will need to make to the existi
 
 6. The agent dll will retain all the same builds that it currently has since it has to be loaded in all platforms and runtimes in which we want to run tests.
 
-7. At this point, we will switch the GUI to use the new engine, hopefully for it's 1.1 release, and continue development from there.
+7. Certain services currently forming part of the engine will be removed. In particular, the `UserSettingsService` and `RecentFilesService` are better handled in the individual runner, which can then store files and settings in the format that is most convenient.
+
+8. At this point, we will switch the GUI to use the new engine, hopefully for it's 1.1 release, and continue development from there.
