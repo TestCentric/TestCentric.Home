@@ -8,10 +8,10 @@
 | **Runner:**                   |                 |                  |              |
 | TestCentric.GuiRunner         | 2.0.0-beta5     | 2.0.0-dev00490   | 2.0.0-beta6  | 
 | TestCentric.Engine            | 2.0.0-beta5     | 2.0.0-dev00023   | 2.0.0-beta6  |
-| TestCentric.Agent.Core        | 2.0.0           | 2.1.0-dev00007   | 2.1.0        |
-| TestCentric.Engine.Api        | 2.0.0-beta5     | 2.0.0-dev00022   | 2.0.0-beta6  |
-| TestCentric.Extensibility     | 3.0.1           | 3.0.2-dev00003   | 3.0.2        |
-| TestCentric.Extensibility.Api | 3.0.1           |                  |              |
+| TestCentric.Agent.Core        | 2.1.0           |                  |              |
+| TestCentric.Engine.Api        | 2.0.0-beta6     |                  |              |
+| TestCentric.Extensibility     | 3.0.2           |                  |              |
+| TestCentric.Extensibility.Api | 3.0.2           |                  |              |
 | TestCentric.Metadata          | 3.0.3           |                  |              |
 | TestCentric.InternalTrace     | 1.2.1           | 1.2.2-dev00001   |              |
 | **Agents:**                   |                 |                  |              |
