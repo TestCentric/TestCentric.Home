@@ -6,7 +6,7 @@
 | **Recipe:**                   |                 |                  |              |
 | TestCentric.Cake.Recipe       | 1.3.3           |                  |              |
 | **Runner:**                   |                 |                  |              |
-| TestCentric.GuiRunner         | 2.0.0-beta5     | 2.0.0-dev00490   | 2.0.0-beta6  | 
+| TestCentric.GuiRunner         | 2.0.0-beta6     |                  |              | 
 | TestCentric.Engine            | 2.0.0-beta6     |                  |              |
 | TestCentric.Agent.Core        | 2.1.0           |                  |              |
 | TestCentric.Engine.Api        | 2.0.0-beta6     |                  |              |
